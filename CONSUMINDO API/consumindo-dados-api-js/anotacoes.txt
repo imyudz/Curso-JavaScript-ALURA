@@ -1,0 +1,43 @@
+----------------------------------------------------------------------------------------------------------
+-------------------------ANOTAÇÕES CURSO DE LEITURA E TRATAMENTO DE DADOS VIA API-------------------------
+----------------------------------------------------------------------------------------------------------
+
+- O JavaScript funciona com 3 eventos: TASK QUEUE, CALL STACK e EVENT LOOP
+
+    -Task QUEUE: Tarefas que estão na espera de acontecer
+
+    -Call Stack: pilha de chamadas que estão acontecendo no momento
+
+    -EVENT LOOP: loop eterno do programa
+
+***********************************************************************************************************
+OS TRÊS EVENTOS RODANDO AO MESMO TEMPO CRIAM UM PROGRAMA DE TAREFAS ASSÍNCRONAS
+JÁ, QUANDO UM PROGRAMA DE TAREFAS SÍNCRONAS ESTÁ RODANDO, AS TAREFAS EXECUTADAS SÃO: CALL STACK e EVENT LOOP
+
+***********************************************************************************************************
+                                            CALLBACKS:
+Funções que esperam uma ação para rodar 
+
+***********************************************************************************************************
+                                            FETCH API:
+- FUNÇÃO QUE FAZ REQUISIÇÕES HTTP
+- CONTEM .THEN --> CALLBACK
+- CONTEM .CATCH --> PEGAR ERROS
+- CONTEM .FINALLY --> OCORRE DEPOIS DOS ERROS E CALLBACKS
+
+**********************************************************************************************************
+                                    OUTRA MANEIRA DE FAZER CÓDIGO ASSÍNCRONO
+- async await --> meio de criar um cópdigo assíncrono criado para melhor visualização de códigos assíncronos
+- somente definindo a FUNÇÃO COMO ASYNC : async function name(param){} : que se pode usar a palavra await
+- o código parece linear, mas na verdade está de modo assincronizado
+- Dmiminui muito a complexidade de se usar diversos .then (.then hell)
+- await: espera um await acontecer para ser liberado a executar outro, mas ao mesmo tempo pode-se fazer outras coisas
+
+O async/await apesar de ser uma opção mais "legível" ao .then() é 
+importante frisar que não são logicamente equivalentes: o async/await 
+faz o processamento de forma sequencial, Promises com .then() são processadas 
+em paralelo, o que faz com que este método seja mais rápido. 
+O async/await simplifica a escrita e a interpretação do código, mas não é tão 
+flexível e só funciona com uma Promise por vez.
+
+**********************************************************************************************************
